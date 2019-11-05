@@ -13,7 +13,7 @@ const Hero = props => {
 };
 
 Hero.propTypes = {
-  title: PropTypes.node.isRequired,
+  title: PropTypes.node,
   image: PropTypes.string.isRequired,
 };
 
