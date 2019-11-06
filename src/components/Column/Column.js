@@ -12,11 +12,14 @@ class Column extends React.Component {
     cards: PropTypes.array,
     icon: PropTypes.node,
   };
- /* state = {
+  static defaultProps = {
+    icon: settings.defaultColumnIcon,
+  };
+  /* state = {
     cards: this.props.cards || [],
   };*/
 
-/*  addCard(title) {
+  /*  addCard(title) {
     this.setState(state => (
       {
         cards: [
@@ -31,6 +34,7 @@ class Column extends React.Component {
   }*/
 
   render() {
+    // eslint-disable-next-line no-unused-vars
     const {title, icon, cards} = this.props;
     return (
       <section className={styles.component}>

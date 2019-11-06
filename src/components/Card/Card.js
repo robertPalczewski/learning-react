@@ -8,10 +8,11 @@ class Card extends React.Component {
   };
 
   render() {
+    // eslint-disable-next-line no-unused-vars
     const {title} = this.props;
     return (
       <div className={styles.component}>
-        {this.props.title}
+        {title}
       </div>
     );
   }
