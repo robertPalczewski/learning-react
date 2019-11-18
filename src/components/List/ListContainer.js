@@ -1,7 +1,7 @@
 import {connect} from 'react-redux';
 import List from './List';
-import getColumnsForList from '../../redux/columnsRedux';
-import createAction_addColumn from '../../redux/columnsRedux';
+import {getColumnsForList} from '../../redux/columnsRedux';
+import {createAction_addColumn} from '../../redux/columnsRedux';
 
 /*export const getColumnsForList = ({columns}, listId) => columns.filter(column => column.listId === listId);*/
 
