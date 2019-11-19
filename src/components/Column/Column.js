@@ -4,18 +4,19 @@ import PropTypes from 'prop-types';
 import Card from '../Card/Card';
 import Creator from '../Creator/Creator';
 import {settings} from '../../data/dataStore';
-// import Icon from '../Icon/Icon';
+import Icon from '../Icon/Icon';
+
 
 
 class Column extends React.Component {
   static propTypes = {
     title: PropTypes.node.isRequired,
     cards: PropTypes.array,
-    /*icon: PropTypes.node,*/
+    icon: PropTypes.node,
     addCard: PropTypes.func,
   };
   static defaultProps = {
-    /*icon: settings.defaultColumnIcon,*/
+    icon: settings.defaultColumnIcon,
   };
   /* state = {
     cards: this.props.cards || [],
@@ -37,10 +38,10 @@ class Column extends React.Component {
 
   render() {
     // eslint-disable-next-line no-unused-vars
-    const {title, /*icon,*/ cards, addCard} = this.props;
+    const {title, icon, cards, addCard} = this.props;
     return (
       <section className={styles.component}>
-        <h3 className={styles.title}>{/*<span className={styles.icon}></span>*/} {this.props.title}</h3>
+        <h3 className={styles.title}><span className={styles.icon}><Icon name={this.props.icon}/></span> {this.props.title}</h3>
         {/*<div>
           {this.state.cards.map(({key, title}) => (
             <Card key={key} title={title}/>
