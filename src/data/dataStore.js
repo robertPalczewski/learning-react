@@ -164,6 +164,24 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Things to do <sup>tommorow!</sup>',
+    description: 'Interesting things I want to check out!, </br> Interesting things I want to check out!, </br>Interesting things I want to check out!, </br>Interesting things I want to check out!',
+    image: 'https://images.pexels.com/photos/2065820/pexels-photo-2065820.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  },
+  {
+    id: 'list-3',
+    title: 'Things to do <sup>now!</sup>',
+    description: 'Interesting things I want to check out!',
+    image: 'https://images.pexels.com/photos/2168238/pexels-photo-2168238.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260',
+  },
+  {
+    id: 'list-4',
+    title: 'Things to do <sup>YESTERDAY!!!</sup>',
+    description: 'Interesting things I want to check out!',
+    image: 'https://images.pexels.com/photos/1145720/pexels-photo-1145720.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+  },
 ];
 
 const columns = [

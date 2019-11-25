@@ -17,6 +17,8 @@
   padding: $base-size;
   min-width: 300px;
   margin-right: auto;
+  max-height: 100px;
+  overflow: hidden;
 }
 
 .title {

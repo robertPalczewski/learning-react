@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Home.scss';
 import PropTypes from 'prop-types';
-import List from '../List/ListContainer';
+import ListLink from '../ListLink/ListLink';
 
 class Home extends React.Component {
   static propTypes = {
@@ -18,7 +18,7 @@ class Home extends React.Component {
         <h2 className={styles.subtitle}>{subtitle}</h2>
         {lists.map(listData => (
 
-          <List key={listData.id} {...listData} />
+          <ListLink key={listData.id} {...listData} />
 
         ))}
       </main>
