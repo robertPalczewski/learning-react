@@ -7,6 +7,7 @@ import {settings} from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
 import Creator from '../Creator/Creator';
 import Container from '../Container/Container';
+import Search from '../Search/SearchContainer';
 
 class List extends React.Component {
   static propTypes = {
@@ -26,6 +27,7 @@ class List extends React.Component {
       <section className={styles.component}>
         <Container>
           <Hero titleText={title} image={image}/>
+          <Search />
           <div className={styles.description}>
             {ReactHtmlParser(description)}
           </div>

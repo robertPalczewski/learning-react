@@ -1,10 +1,7 @@
 import React from 'react';
 import styles from './Home.scss';
-/*import List from '../List/List';*/
-/*import {pageContents, listData} from '../../data/dataStore';*/
 import PropTypes from 'prop-types';
 import List from '../List/ListContainer';
-import Search from '../Search/SearchContainer';
 
 class Home extends React.Component {
   static propTypes = {
@@ -19,10 +16,10 @@ class Home extends React.Component {
       <main className={styles.component}>
         <h1 className={styles.title}>{title}</h1>
         <h2 className={styles.subtitle}>{subtitle}</h2>
-        <Search />
-        {/*<List {...listData} />*/}
         {lists.map(listData => (
+
           <List key={listData.id} {...listData} />
+
         ))}
       </main>
     );
